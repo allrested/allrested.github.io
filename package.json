@@ -13,5 +13,8 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-svelte": "^4.0.0",
     "svelte": "^1.49.1"
+  },
+  "devDependencies": {
+    "distill-template": "^1.1.0"
   }
 }
