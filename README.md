@@ -1,37 +1,52 @@
-# svelte-ssr
+# allrested.github.io
 
-This is a cloneable template for creating interactive articles with Distill and Svelte.
+DEMO
+https://allrested.github.io
 
-```
-npm install -g degit # you only need to do this once
+## About Storybook
+Storybook for Vue is a UI development environment for UI components. It allows interactive development, testing and sharing of UI components in various property states.
 
-degit distillpub/svelte-template your-article
-cd your-article
-```
+Storybook runs outside of your app. So you can develop UI components in isolation without worrying about app specific dependencies and requirements.
 
-You can then:
-```
+## About Vuetify
+Vuetify is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze.
+
+Vuetify combines the power of Vue and Material Design to provide a beautifully crafted library of components. Created according to Google's Material Design Spec, Vuetify components feature an easy-to-remember semantic design that shifts remembering complex classes and markup, to type-as-you speak properties that have simple and clear names.
+
+## Getting Started
+Clone this repo to explore how it's put together. Use it as a boilerplate for creating and testing your own Material Design layouts and components with Vuetify.
+
+## Build Setup
+
+```bash
+# install dependencies
 npm install
 
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
 npm run build
-
-npm run serve
 ```
+For detailed explanation on how things work, consult the
+[docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-##Goals
+## Storybook
 
-A reusable, reactive template for authoring interactive articles for https://distill.pub.
+```bash
+# run storybook
+npm run storybook
+http://localhost:9001/
+```
+# Resources
 
-##Features
+## Storybook Resources
 
-1. Server-side rendering for markup with client-side hydration of javascript.
+Storybook for Vue
+https://storybook.js.org/basics/guide-vue/
 
-2. Support for a central data store.
+VueNYC - A Short Synopsis of Vue Storybook - Erin Depew
+https://www.youtube.com/watch?v=qcSEIH5iexc
 
-3. Uglify during production. (TODO)
-
-4. Image asset pipeline. (TODO)
-
-5. Live reloading during development. (TODO)
-
-6. Markdown support for article body. (TODO)
+## Vuetify
+https://github.com/vuetifyjs/vuetify

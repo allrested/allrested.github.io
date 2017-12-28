@@ -1,20 +1,41 @@
 {
-  "name": "ssr",
-  "private": true,
+  "name": "vwre",
+  "description": "vue wre",
   "version": "1.0.0",
+  "author": "Max Hodges <Max@whiterabbitjapan.com>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "serve": "python3 -m http.server",
-    "build": "npm run build-client && npm run build-server && node ./bin/render.js",
-    "build-client": "rollup -c rollup.config.client.js",
-    "build-server": "rollup -c rollup.config.server.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybookoutput": "build-storybook -c .storybook -o .out"
   },
   "dependencies": {
-    "rollup": "^0.52.2",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-svelte": "^4.0.0",
-    "svelte": "^1.49.1"
+    "vue": "^2.5.9",
+    "vuetify": "^0.17.3"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "devDependencies": {
-    "distill-template": "^1.1.0"
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-knobs": "^3.2.16",
+    "@storybook/addon-links": "^3.2.16",
+    "@storybook/addon-notes": "^3.2.16",
+    "@storybook/vue": "^3.2.16",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.5.9",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
   }
 }
